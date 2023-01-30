@@ -1,12 +1,26 @@
 :root {
   --main-color-title: #2e2f42;
+  --main-color-text: #434455;
+  --adress-link-color: #404bbf;
+  --logo-color-braun:#4d5ae5;
+  --bg-white-color:#FFFFFF;
+  --ashen-color: #F4F4FD;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color:var(--bg-white-color);
+  font-size:16px;
+  line-height:1.5;
+  letter-spacing:0.02em;
+
 }
 /* --------------------HEADER ---------------------*/
 .header {
+  
+}
+.text-aligt-centr{
+  text-align: center;
 }
 
 .link {
@@ -18,13 +32,12 @@ body {
 }
 
 .textttt {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-color-text)
 }
+  
 
 .subtitle {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -35,7 +48,7 @@ body {
 }
 .header-nav-logo {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
+  text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -43,14 +56,10 @@ body {
   color: var(--main-color-title);
 }
 .header-logo {
-  font-family: "Raleway" sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
+
+  color:var(--logo-color-braun)
 }
+ 
 .header-list {
 }
 .header-item {
@@ -64,51 +73,66 @@ body {
 }
 
 .header-link:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--adress-link-color)
 }
 
 .header-address {
+  font-style: normal;
 }
 .header-address-list {
+  
 }
 .header-address-item {
 }
 .header-address-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--main-color-text);
   font-style: normal;
 }
+  
 
 .header-address-link:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--adress-link-color)
 }
 
 /* ------------------MAIN--------------------- */
 
 .main {
-    background-color: #FFFFFF;
+    background-color:var(--bg-white-color)
 }
 .main-section {
-  background-color: #2e2f42;
+  background-color:var(--main-color-title);
 }
 .main-title {
+  text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--bg-white-color)
 }
 .main-btn {
+  cursor: pointer;
+  background-color: var(--logo-color-braun);
   font-family: inherit;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
+  color:var(--bg-white-color);
 }
+
+.main-btn:is(:hover, :focus) {
+  background-color: var(--adress-link-color)
+}
+  
+  
+  
+  
+  
+  
+  
 
 /* ---------------------TECHNOLOGIES---------------------- */
 
@@ -138,6 +162,8 @@ body {
 .doing-section {
 }
 .doing-subtitle {
+  text-align: center;
+  text-transform:capitalize;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -153,18 +179,22 @@ body {
 /*---------------------------TEAM----------------------- */
 
 .team-section {
-    background-color:  #F4F4FD;
+    background-color:var(--ashen-color);
 }
 .team-subtitle {
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-color-title);
 }
 .team-list {
-    background-color:  #FFFFFF;;
+    
 }
 .team-items {
+}
+.items{
+  background-color: var(--bg-white-color);
 }
 .team-images {
 }
@@ -179,14 +209,15 @@ body {
 /* --------------FOOTER-------------- */
 
 .footer {
-    background-color: #2e2f42;
+    background-color: var(--main-color-title);
 }
 .footer-link {
+  text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: #F4F4FD;
+  color: var(--ashen-color);
 }
  
 .footer-logo {
@@ -196,7 +227,9 @@ body {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  font-style: normal;
+  color: var(--logo-color-braun);
+  
 }
 .footer-text {
   color: #e7e9fc;
@@ -205,7 +238,7 @@ body {
 /* ---------------------------PORTFOLIO--------------------------- */
 
 .main {
-    background-color: #FFFFFF;
+    background-color: var(--bg-white-color)
 }
 .main-section-services {
 }
@@ -214,13 +247,25 @@ body {
 }
 
 .btn-items {
+  
+ 
+}
+
+.button-items{
   font-family: inherit;
+  background-color: var(--ashen-color);
+  color: var(--logo-color-braun);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  color: #4d5ae5;
 }
+.button-items:is(:hover, :focus) {
+  background-color: var(--logo-color-braun);
+  color: var(--bg-white-color)
+}
+
 
 .types-section {
 }
@@ -237,4 +282,10 @@ body {
 .types-subtitle {
 }
 .types-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+
+
 }
